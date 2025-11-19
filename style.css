@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar {
+    background-color: #4C1A1A;
+    padding: 20px;
+    width: 100%;
+}
+
+.topbar .container {
+    width: 100%;
+    max-width: 1900;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #F4EDE2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    color: #F4EDE2;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Italiana', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* HERO */
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudGVzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000') center/cover no-repeat;
+    color: white;
+    padding: 400px 20px;
+}
+
+.hero h2 {
+    font-family: 'Italianno', serif;
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-family: 'Italiana', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    font-family: 'Italiana', serif;
+    background-color: #FFD580;
+    color: #4C1A1A;
+    border: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* HISTORIA */
+
+.historia {
+    background-color: #F8F0DF;
+    padding: 40px 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.historia h3 {
+    font-family: 'Italiana', serif;
+    color: #8B0000;
+    text-align: center;
+    font-size: 40px;
+}
+
+.historia p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* CARDAPIO PRINCIPAL */
+
+.cardapio {
+    background-color: #fdfaf7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cardapio h3 {
+    font-family: "Italiana", serif;
+    font-size: 40px;
+    color: #4a3325;
+    margin-bottom: 10px;
+}
+
+.cardapio p {
+    font-family: "Italiana", serif;
+    color: #5e4a3c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #3c2a1a;
+}
+
+.card-content p {
+    font-family: "Open Sans", sans-serif;
+    color: #6b5848;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #7c4f2b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CARDAPIO */
+
+.menu-section {
+    padding: 64px 20px;
+    background: #f7f5f1;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.menu-section .menu-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: #7a7874;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+.menu-tabs {
+    width: 80%;
+    max-width: 980px;
+    margin: 0 auto 36px auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    background: #eeeae6;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.menu-tabs .tab {
+    background: transparent;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #6b6b6b;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+/* Aba ativa — pequena "placa" branca elevada */
+.menu-tabs .tab.active {
+    background: white;
+    color: #333;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+    font-weight: 600;
+}
+
+.menu-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 60px;
+    align-items: start;
+    padding: 8px 12px 0 12px;
+}
+
+.item {
+    text-align: left;
+    padding: 6px 0;
+}
+
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #1f1f1f;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.item p {
+    font-family: 'Open Sans', sans-serif;
+    color: #6b6b6b;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* CONTATO E RODAPE */
+
+.contato {
+    background-color: #fff4e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato h3 {
+    font-family: 'Italiana', serif;
+    color: #8B0000;
+    font-size: 40px;
+}
+
+.mapa {
+    margin: center;
+}
+
+footer {
+    background-color: #4C1A1A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}

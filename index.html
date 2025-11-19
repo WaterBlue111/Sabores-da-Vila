@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Vila</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container">
+            <h1 class="logo">Sabores da Vila</h1>
+            <nav class="menu">
+                <a href="#historia">História</a>
+                <a href="#contato">Contato</a>
+                <a href="#contato">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Sabores da Vila</h2>
+        <p>Comida boa e ótimo atendimento no coração da cidade.</p>
+        <button onclick="scrollToCardapio()">Ver os destaques do dia</button>
+    </section>
+
+    <section class="historia" id="historia">
+        <h3>Nossa História</h3>
+        <p>No coração de uma pequena e acolhedora cidade do interior, cercada por ruas de pedra e casarios antigos, nasceu o Sabores da Vila, em 2005.</p>
+        <p>Fundado por Laura Almeida, o restaurante surgiu como um sonho simples: preservar os sabores do passado e oferecer uma mesa que fosse, antes de tudo, um abraço acolhedor.</p>
+        <p>Desde cedo, Laura aprendeu que cozinhar não era apenas preparar alimentos — era cuidar, ouvir histórias, honrar memórias e criar novas junto a quem se senta à mesa.</p>
+        <p>Com o passar dos anos, o Sabores da Vila se tornou um ponto de encontro da cidade: famílias celebram aniversários, casais compartilham noites especiais e viajantes descobrem o conforto da gastronomia caseira.</p>
+        <p>Hoje, mantendo suas portas abertas há quase duas décadas, o restaurante segue firme em sua missão: servir comida que aquece o coração e honra o tempo das coisas simples — porque aqui, cada refeição ainda começa com carinho e termina com saudade do próximo encontro.</p>
+    </section>
+
+    <section id="cardapio" class="cardapio">
+        <h3>Pratos do Dia</h3>
+        <p>Selecionamos cuidadosamente três pratos especiais todos os dias, preparados com ingredientes frescos e da estação.</p>
+        <div id="menuDoDia" class="menu-grid"></div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p class="menu-subtitle">
+        Explore nossa seleção de pratos tradicionais preparados com carinho
+        </p>
+
+        <div class="menu-tabs">
+            <button class="tab active" data-tab="entradas">Entradas</button>
+            <button class="tab" data-tab="principais">Pratos Principais</button>
+            <button class="tab" data-tab="sobremesas">Sobremesas</button>
+            <button class="tab" data-tab="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-content">
+
+            <div class="content active" id="entradas">
+                <div class="item">
+                    <h3>Bolinhos de Bacalhau</h3>
+                    <p>Bolinho crocante de bacalhau desfiado com batata e temperos especiais</p>
+                </div>
+
+                <div class="item">
+                    <h3>Coxinha de Frango</h3>
+                    <p>Coxinha tradicional recheada com frango temperado</p>
+                </div>
+
+                <div class="item">
+                    <h3>Pastel de Carne</h3>
+                    <p>Pastel artesanal crocante recheado com carne moída temperada</p>
+                </div>
+
+                <div class="item">
+                    <h3>Mandioca Frita</h3>
+                    <p>Mandioca crocante por fora e macia por dentro</p>
+                </div>
+
+                <div class="item">
+                    <h3>Bruschetta Brasileira</h3>
+                    <p>Pão italiano com tomate, manjericão e azeite de dendê</p>
+                </div>
+
+                <div class="item">
+                    <h3>Caldinho de Feijão</h3>
+                    <p>Caldinho cremoso de feijão com calabresa e bacon</p>
+                </div>
+            </div>
+
+            <div class="content" id="principais">
+                <div class="item">
+                    <h3>Strogonoff de Frango</h3>
+                    <p>Cubos de frango ao molho cremoso de cogumelos, arroz branco e batata palha</p>
+                </div>
+
+                <div class="item">
+                    <h3>Escondidinho de Carne Seca</h3>
+                    <p>Purê de mandioca cremoso com carne seca desfiada e queijo gratinado</p>
+                </div>
+
+                <div class="item">
+                    <h3>Filé Mignon ao Molho Madeira</h3>
+                    <p>Medalhão grelhado com molho de vinho madeira, servido com purê de batatas e legumes salteados</p>
+                </div>
+
+                <div class="item">
+                    <h3>Risoto de Camarão</h3>
+                    <p>Arroz arbório cremoso com camarões frescos, vinho branco e ervas finas</p>
+                </div>
+
+                <div class="item">
+                    <h3>Parmegiana de Frango</h3>
+                    <p>Peito empanado ao molho de tomate e queijo, com purê e arroz</p>
+                </div>
+
+                <div class="item">
+                    <h3>Cordeiro ao Vinho Tinto</h3>
+                    <p>Cozido lentamente em vinho, acompanhado de purê de batata-doce e cebolas caramelizadas</p>
+                </div>
+
+            </div>
+
+            <div class="content" id="sobremesas">
+                <div class="item">
+                    <h3>Petit Gâteau</h3>
+                    <p>Bolo de chocolate com casca crocante e recheio cremoso, servido com sorvete de creme</p>
+                </div>
+
+                <div class="item">
+                    <h3>Panna Cotta de Frutas Vermelhas</h3>
+                    <p>Sobremesa italiana leve com calda artesanal de frutas silvestres</p>
+                </div>
+
+                <div class="item">
+                    <h3>Torta de Limão Siciliano</h3>
+                    <p>Base crocante, recheio cremoso e raspas de limão fresco</p>
+                </div>
+
+                <div class="item">
+                    <h3>Banoffee da Vila</h3>
+                    <p>Camadas de banana, doce de leite e chantilly sobre base amanteigada</p>
+                </div>
+            </div>
+
+            <div class="content" id="bebidas">
+                <div class="item">
+                    <h3>Suco Natural</h3>
+                    <p>Diversos sabores feitos na hora</p>
+                </div>
+
+                <div class="item">
+                    <h3>Limonada Suíça</h3>
+                    <p>Cremosa e gelada, feita com limão tahiti</p>
+                </div>
+
+                <div class="item">
+                    <h3>Refrigerantes Diversos</h3>
+                    <p>Coca-Cola, Guaraná, Fanta e outros sabores</p>
+                </div>
+
+                <div class="item">
+                    <h3>Água Mineral com e sem Gás</h3>
+                    <p>Servida gelada ou em temperatura ambiente</p>
+                </div>
+
+                <div class="item">
+                    <h3>Chá Gelado Natural</h3>
+                    <p>Chá preto com limão e hortelã</p>
+                </div>
+
+                <div class="item">
+                    <h3>Cerveja Artesanal da Vila</h3>
+                    <p>Produzida localmente, puro malte</p>
+                </div>
+
+                <div class="item">
+                    <h3>Caipirinha Tradicional</h3>
+                    <p>Cachaça artesanal, limão e açúcar</p>
+                </div>
+
+                <div class="item">
+                    <h3>Vinho da Casa (Tinto ou Branco)</h3>
+                    <p>Seleção especial da adega</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h3>Contato e Localização</h3>
+        <p>📍 R. Santa Rita, 221 - Centro, Garopaba SC</p>
+        <p>📞 (048) 99187-8886</p>
+        <p>✉️ contato@saboresdavila.com</p>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d880.4571290535457!2d-48.62005335491695!3d-28.029716619703407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526d198729d0355%3A0x8294242d19b3aec0!2sRestaurante%20Sabores%20da%20vila!5e0!3m2!1spt-BR!2sbr!4v1762991220251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Sabores da Vila – Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
